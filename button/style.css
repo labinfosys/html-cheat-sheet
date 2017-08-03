@@ -1,0 +1,101 @@
+/* colors */
+/* blue:   #0A67A3	#24587A	#03426A	#3E97D1	#65A6D1 */
+/* green:  #00AC6B	#20815D	#007046	#35D699	#60D6A9 */
+/* orange: #FF8E00	#BF8030	#A65C00	#FFAA40	#FFC173 */
+/* gray:   #8C9093 */
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+/* Основной стиль кнопки */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0;
+
+    background: #06799F;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+
+    cursor: pointer;
+}
+.btn:hover {
+    background: #24587A;
+}
+.btn:active, .btn:focus {
+    outline: none;
+}
+.btn:disabled, .btn:disabled:hover {
+    background: #8C9093;
+    cursor: auto;
+}
+
+/* Зелёные кнопки */
+.btn.btn-success {
+    background: #00AC6B;
+}
+.btn.btn-success:hover {
+    background: #20815D;
+}
+
+/* Оранжевые кнопки */
+.btn.btn-warning {
+    background: #BF8030;
+}
+.btn.btn-warning:hover {
+    background: #A65C00;
+}
+
+/* Иконки */
+.btn > .fa {
+    padding: 0 5px;
+}
+
+/*** Дополнительные стили для кнопок ***/
+.btn.btn-flat {
+    background: none;
+    color: #06799F;
+}
+.btn.btn-flat.btn-warning {
+    background: none;
+    color: #A65C00;
+}
+.btn.btn-flat.btn-success {
+    background: none;
+    color: #20815D;
+}
+.btn.btn-flat:hover {
+    background: #F2EFEC;
+}
+
+.btn.btn-raised {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
+  0 1px 2px 0 rgba(0, 0, 0, .24);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
+  0 1px 2px 0 rgba(0, 0, 0, .24); 
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
+  0 1px 2px 0 rgba(0, 0, 0, .24); 
+}
+
+.btn.btn-small {
+    padding: 5px 7px;
+    font-size: .7em;
+}
+
+.btn.btn-circle {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn.btn-circle > .fa {
+    line-height: 50px;
+}
